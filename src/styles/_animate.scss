@@ -1,0 +1,20 @@
+/** ===============						================ */
+@keyframes sett_ani {
+	from {		transform: rotate(0deg);		}
+	to {		transform: rotate(360deg);		}
+}
+@-webkit-keyframes sett_ani {
+	from {		-webkit-transform: rotate(0deg);		}
+	to {		-webkit-transform: rotate(360deg);		}
+}
+@keyframes sett_ani_rev {
+	from {		transform: rotate(360deg);		}
+	to {		transform: rotate(0deg);		}
+}
+@-webkit-keyframes sett_ani_rev {
+	from {		-webkit-transform: rotate(360deg);		}
+	to {		-webkit-transform: rotate(0deg);		}
+}
+/** ===============						================ */
+
+/** ===============						================ */

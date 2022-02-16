@@ -1,0 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**	===============		my addons	 	================ */
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+@keyframes sett_ani{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@-webkit-keyframes sett_ani{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes sett_ani_rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}@-webkit-keyframes sett_ani_rev{from{-webkit-transform:rotate(360deg)}to{-webkit-transform:rotate(0deg)}}html{width:100vw;height:100vh;scroll-behavior:smooth}body{width:100vw;height:100vh;overflow-x:hidden}.page{position:relative;width:100vw;height:100vh;max-width:3000px;min-height:600px;margin:0px;padding:0px;overflow:hidden;display:grid;justify-content:space-between;grid-template-columns:.1fr 9.8fr .1fr;grid-template-rows:.25fr 4.5fr .25fr}.page *{margin:0px;padding:0px;font-family:"Arial",sans-serif;color:#000}.page>*{grid-column:2/3;width:100%;height:100%}header{grid-row:1;position:relative;width:100%;height:100%;top:0vh;opacity:1;transition:opacity .5s ease,height .3s ease,top .5s ease}.header0{position:absolute;width:100%;height:100%;top:0vh;opacity:1;transition:opacity .5s ease,height .3s ease,top .5s ease}.header1{position:absolute;width:100%;height:100%;top:0vh;opacity:1;background-color:#fff;transition:opacity .5s ease,height .3s ease,top .5s ease}main{grid-row:2;position:relative}main>*{width:100%;height:100%}footer{grid-row:3}.layer{position:absolute;top:0vh;opacity:1;transition:opacity .5s ease,height .3s ease,top .5s ease}.lyr0{z-index:1;transition:opacity 0s linear,height 0s linear,top 0s linear}.lyr1{z-index:4}.lyr2{z-index:7}.lyr3{z-index:10}.lyr4{z-index:13}.lyr5{z-index:16;transform:Scale(1);transition:transform .5s ease}.lyr_hide{height:0%;transition:height .3s ease}.lyr_hide1{height:0%;transition:height .5s ease}.lyr_hide2{top:100vh;transition:top .5s ease}.lyr_hide3{opacity:0;transition:opacity .5s ease}.lyr_hide4{transform:Scale(0);transition:transform .25s linear}.header_cont{width:100%;height:100%;display:flex;justify-content:space-around;align-items:center;font-size:calc(16px + 16*(100vw - 320px)/2240);color:#000}.head_bt{width:100%;height:80%;justify-self:center;align-self:center;width:calc(36px + 28*(100vw - 200px)/2360)}.head_bt:hover{filter:hue-rotate(0deg) brightness(50%) contrast(60%) saturate(0%)}.bt_back{cursor:pointer;background:center center/contain no-repeat url("./images/bt_back.svg")}.bt_sett{cursor:pointer;background:center center/contain no-repeat url("./images/bt_sett.svg");animation:sett_ani_rev 1s ease;-webkit-animation:sett_ani_rev 1s ease}.bt_sett:hover{animation:sett_ani 1s ease;-webkit-animation:sett_ani 1s ease}.logo_img{width:50%;height:100%;cursor:pointer;background:center center/contain no-repeat url("./images/zoo_quiz.svg")}.head_cat{flex-grow:1;text-align:center;font-size:calc(18px + 30*(100vw - 200px)/2360)}.head_quest{flex-grow:10;margin-top:2px;text-align:center;font-size:calc(12px + 24*(100vw - 220px)/2340)}.bt_close{flex-grow:1;cursor:pointer;background:center center/contain no-repeat url("./images/close.svg")}.footer_cont{width:100%;height:100%;display:flex;justify-content:space-around;align-items:center}.footer_link{text-decoration:none}.rss_img{height:calc(20px + 30*(100vw - 220px)/2340)}.link_img{width:20px;height:20px;padding:0px;margin:0px;vertical-align:bottom}.welcome_cont{width:100%;height:100%;font-size:calc(10px + 40*(100vw - 320px)/2240);background-color:#fff;display:grid;align-content:space-around;grid-template-columns:1fr 2fr 1fr;grid-template-rows:.25fr 0fr .25fr 2fr .25fr 2fr .25fr}.welcome_category{grid-column:2/3;width:100%;height:100%}.wel_logo{grid-column:2/3;grid-row:2;display:grid;justify-content:center;align-items:center;width:100%;height:100%}.wel_logo_img{width:calc(100px + 260*(100vw - 200px)/2360)}.wel_cat_1{background:center top/contain no-repeat url("./assets/img/belka.jpg")}.wel_cat_2{background:center top/contain no-repeat url("./assets/img/zhuk-navoznik.jpg")}.wel_cat{width:calc(160px + 640*(100vw - 200px)/2360);height:calc(100px + 400*(100vw - 200px)/2360);text-align:center;cursor:pointer;background-color:#000;box-shadow:2px 2px 4px rgba(51,51,51,.2);display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end}.wel_cat:hover{box-shadow:2px 2px 4px rgba(51,51,51,.2),4px 4px 8px rgba(51,51,51,.3),8px 8px 16px rgba(51,51,51,.4)}.wel_cat>div{width:100%;height:25%;color:#fff;text-shadow:2px 2px 4px rgba(51,51,51,.8),4px 4px 8px rgba(51,51,51,.6);font-size:calc(20px + 40*(100vw - 200px)/2360);letter-spacing:calc(1px + 7*(100vw - 200px)/2360)}.welcome_cat1{grid-row:4}.welcome_cat2{grid-row:6}@media all and (min-width: 1000px){.welcome_cont{grid-template-columns:1fr 2fr 1fr 2fr 1fr;grid-template-rows:.25fr 0fr 1fr 2fr 1fr}.wel_logo{grid-column:2/5;grid-row:2}.welcome_cat1{grid-column:2/3;grid-row:4}.welcome_cat2{grid-column:4/5;grid-row:4}.wel_cat>div{height:16%}}.sett_cont{width:100%;height:100%;background-color:rgba(0,0,0,.98)}.end_answer_cont{position:relative;width:100%;height:100%;overflow:hidden;display:grid;justify-content:space-between;align-items:center;grid-template-columns:0px 1.25fr 2fr 1fr 1fr 2fr 1.25fr 0px;grid-template-rows:0px .75fr .5fr .3fr 6fr .5fr .2fr .75fr .1fr 0px;grid-template-areas:"_l_  _t_  _t_  _t_  _t_  _t_  _t_  _r_" "_l_  ...  ...  ...  ...  ...  ...  _r_" "_l_  ...  ctx  ctx  ctx  ctx  ...  _r_" "_l_  ...  ...  ...  ...  ...  ...  _r_" "_l_  ...  eai  eai  eai  eai  ...  _r_" "_l_  ...  ...  rgh  rgh  ...  ...  _r_" "_l_  ...  ...  ...  ...  ...  ...  _r_" "_l_  ...  ...  nxt  nxt  ...  ...  _r_" "_l_  ...  ...  ...  ...  ...  ...  _r_" "_l_  _b_  _b_  _b_  _b_  _b_  _b_  _r_";background-color:rgba(255,255,255,.95)}.end_answer_cont>*{font-size:calc(16px + 32*(100vw - 200px)/2360);color:#fff;text-shadow:1px 1px 2px rgba(26,26,26,.5),2px 2px 4px rgba(51,51,51,.5),4px 4px 8px rgba(77,77,77,.5)}.bt_next_q{grid-area:nxt;width:100%;height:100%;cursor:pointer;display:flex;justify-content:center;align-items:center;flex-direction:row}.bt_next_q:hover{background-color:#000}.end_answer_img{grid-area:eai;width:100%;height:100%;background:center center/contain no-repeat url("./assets/img/belka.jpg")}.end_answer_txt{grid-area:ctx;width:100%;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:row}.end_answer_right{grid-area:rgh;width:100%;height:100%;font-size:calc(12px + 24*(100vw - 200px)/2360);display:flex;justify-content:center;align-items:center;flex-direction:row}.end_answer2_cont{grid-template-columns:0px .25fr 1fr 1fr .25fr 0px;grid-template-rows:0px .25fr .5fr .25fr 1fr 1fr 1fr 1fr .25fr .75fr .25fr 0px;grid-template-areas:"_l_  _t_  _t_  _t_  _t_  _r_" "_l_  ...  ...  ...  ...  _r_" "_l_  ...  ctx  ctx  ...  _r_" "_l_  ...  ...  ...  ...  _r_" "_l_  ...  ln1  ln1  ...  _r_" "_l_  ...  ln2  ln2  ...  _r_" "_l_  ...  ln3  ln3  ...  _r_" "_l_  ...  ln4  ln4  ...  _r_" "_l_  ...  ...  ...  ...  _r_" "_l_  ...  nxt  nxt  ...  _r_" "_l_  ...  ...  ...  ...  _r_" "_l_  _b_  _b_  _b_  _b_  _r_"}.answer_line_1{grid-area:ln1;width:100%;height:100%}.answer_line_2{grid-area:ln2;width:100%;height:100%}.answer_line_3{grid-area:ln3;width:100%;height:100%}.answer_line_4{grid-area:ln4;width:100%;height:100%}.g2_line_answ{display:flex;justify-content:center;align-items:center;flex-direction:row}@media all and (max-width: 700px){.end_answer_cont{grid-template-columns:0px 0fr 2.5fr 1fr 1fr 2.5fr 0fr 0px}}.lyr5{font-size:calc(20px + 80*(100vw - 200px)/2360);text-align:center;background-color:rgba(255,255,255,.84)}

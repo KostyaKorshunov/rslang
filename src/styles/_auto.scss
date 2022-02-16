@@ -1,0 +1,5 @@
+@function a_size( $sz_min, $sz_max, $vp_min, $vp_max ) {
+	$sz_min_px: $sz_min * 1px;
+	$vp_min_px: $vp_min * 1px;
+	@return calc($sz_min_px + ($sz_max - $sz_min)*((100vw - $vp_min_px) / ($vp_max - $vp_min)));
+}

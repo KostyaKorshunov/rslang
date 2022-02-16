@@ -1,0 +1,182 @@
+
+@import "./_auto.scss";
+@import "./_animate.scss";
+
+/** ====================	global vars	and pars	======================== */
+
+/** ====================		fonts				======================== */
+
+/** ====================		global styles		======================== */
+html {
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+.page {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	max-width: 3000px;
+	min-height: 600px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+
+	display: grid;
+	justify-content: space-between;
+/*	align-items: center;	*/
+	grid-template-columns: 	0.1fr 9.8fr 0.1fr;
+	grid-template-rows: 	0.25fr 4.5fr 0.25fr;
+}
+.page * {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial', sans-serif;
+	color: hsla(0, 0%, 0%, 1.0);
+/*	font-family: 'Arial-MT';	*/
+}
+.page > * {
+	grid-column: 2 / 3;
+/*	justify-self: center;	*/
+/*	align-self: stretch;*/
+/*	align-self: center;	*/
+/*	text-align: center;	*/
+	width: 100%;
+	height: 100%;
+}
+/** ====================				===================  */
+header {
+	grid-row: 1;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0vh;
+	opacity: 1;
+	transition: opacity 0.5s ease, height 0.3s ease, top 0.5s ease;
+}
+.header0 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0vh;
+	opacity: 1;
+	transition: opacity 0.5s ease, height 0.3s ease, top 0.5s ease;
+}
+.header1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0vh;
+	opacity: 1;
+	background-color: hsla(0, 0%, 100%, 1.0);
+	transition: opacity 0.5s ease, height 0.3s ease, top 0.5s ease;
+}
+main {
+/*	grid-column: 2 / 3;	*/
+	grid-row: 2;
+	position: relative;
+}
+main > * {
+	width: 100%;
+	height: 100%;
+}
+footer {
+/*	grid-column: 2 / 3;	*/
+	grid-row: 3;
+}
+/** ====================				===================  */
+.layer {
+	position: absolute;
+	top: 0vh;
+	opacity: 1;
+	transition: opacity 0.5s ease, height 0.3s ease, top 0.5s ease;
+/*	transition: opacity 0.7s ease, height 0.5s ease, top 0.5s ease;	*/
+}
+.lyr0 {
+	z-index: 1;
+	transition: opacity 0.0s linear, height 0.0s linear, top 0.0s linear;
+}
+.lyr1 {
+	z-index: 4;
+}
+.lyr2 {
+	z-index: 7;
+}
+.lyr3 {
+	z-index: 10;
+}
+.lyr4 {
+	z-index: 13;
+}
+.lyr5 {
+	z-index: 16;
+	transform: Scale(1.0);
+	transition: transform 0.5s ease;
+}
+.lyr_hide {
+	height: 0%;
+	transition: height 0.3s ease;
+}
+.lyr_hide1 {
+	height: 0%;
+	transition: height 0.5s ease;
+	
+}
+.lyr_hide2 {
+	top: 100vh;
+	transition: top 0.5s ease;
+}
+.lyr_hide3 {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.lyr_hide4 {
+	transform: Scale(0.0);
+	transition: transform 0.25s linear;
+}
+/** =================================================================================================== */
+@import "./header.scss";
+@import "./footer.scss";
+@import "./welcome.scss";
+@import "./settings.scss";
+@import "./view_pop_answ.scss";
+/** =================================================================================================== */
+
+.lyr5 {
+	font-size: a_size(20, 100, 200, 2560);
+	text-align: center;
+	background-color: hsla(0, 0%, 100%, 0.84);
+}
+/**
+.x_cont {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: 10px repeat(10, 1fr) 10px;
+	grid-template-rows: 10px repeat(10, 1fr) 10px;
+	grid-template-areas: 	"_l_  _t_  _t_  _t_  _t_  _t_  _t_  _t_  _t_  _t_  _t_  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  _r_"
+							"_l_  _b_  _b_  _b_  _b_  _b_  _b_  _b_  _b_  _b_  _b_  _r_";
+}
+	from 1200 (=50px) to 320 (=20px)
+	calc(20px + (50 - 20)*((100vw - 320px) / (1200 - 320)))
+	calc(dmin + (dmax - dmin)*((100vw - vpmin) / (vpmax - vpmin)))
+*/

@@ -1,0 +1,5 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>sett</title>
+<circle cx="50px" cy="50px" r="32px" fill="none" stroke="#727272" stroke-width="14px" />
+<circle cx="50px" cy="50px" r="36px" fill="none" stroke="#727272" stroke-width="20px" stroke-dasharray="6,32" stroke-linecap="round" />
+</svg>

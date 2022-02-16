@@ -1,0 +1,22 @@
+
+/** ===============						================ */
+.footer_cont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer_link {
+	text-decoration: none;
+}
+.rss_img {
+	height: a_size(20, 50, 220, 2560);
+}
+.link_img {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: bottom;
+}
