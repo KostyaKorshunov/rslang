@@ -4,13 +4,14 @@
     "build": "webpack watch"
   },
   "devDependencies": {
+    "@types/mini-css-extract-plugin": "^2.5.1",
     "awesome-typescript-loader": "^5.2.1",
-    "css-loader": "^6.5.1",
-    "mini-css-extract-plugin": "^2.4.5",
-    "sass": "^1.45.0",
-    "sass-loader": "^12.4.0",
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.6.0",
     "ts-loader": "^9.2.6",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2"
   }
 }

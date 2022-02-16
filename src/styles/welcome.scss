@@ -6,7 +6,7 @@
 	height: 100%;
 /*	height: a_size(100, 500, 320, 2560);	*/
 	font-size: a_size(10, 50, 320, 2560);
-	background-color: hsla(0, 0%, 100%, 1.00);
+/*	background-color: hsla(0, 0%, 100%, 1.00);	*/
 
 	display: grid;
 	align-content: space-around;
@@ -18,57 +18,7 @@
 	width: 100%;
 	height: 100%;
 }
-.wel_logo {
-	grid-column: 2 / 3;
-	grid-row: 2;
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-}
-.wel_logo_img {
-	width: a_size(100, 360, 200, 2560);
-}
-.wel_cat_1 {
-	background: center top / contain no-repeat url("./assets/img/belka.jpg");
-}
-.wel_cat_2 {
-	background: center top / contain no-repeat url("./assets/img/zhuk-navoznik.jpg");
-}
-.wel_cat {
-	width: a_size(160, 800, 200, 2560);
-	height: a_size(100, 500, 200, 2560);
-	text-align: center;
-	cursor: pointer;
-	background-color: hsla(0, 0%, 0%, 1.00);
-	box-shadow: 2px 2px 4px hsla(0, 0%, 20%, 0.20);
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-.wel_cat:hover {
-	box-shadow: 2px 2px 4px hsla(0, 0%, 20%, 0.20),
-				4px 4px 8px hsla(0, 0%, 20%, 0.30),
-				8px 8px 16px hsla(0, 0%, 20%, 0.40);
-}
-.wel_cat > div {
-	width: 100%;
-	height: 25%;
-	color: hsla(0, 0%, 100%, 1.00);
-	text-shadow: 	2px 2px 4px hsla(0, 0%, 20%, 0.80),
-					4px 4px 8px hsla(0, 0%, 20%, 0.60);
-	font-size: a_size(20, 60, 200, 2560);
-	letter-spacing: a_size(1, 8, 200, 2560);
-}
-.welcome_cat1 {
-	grid-row: 4;
-}
-.welcome_cat2 {
-	grid-row: 6;
-}
 @media all and (min-width: 1000px){
 	.welcome_cont {
 		grid-template-columns: 	1.0fr 2.0fr 1.0fr 2.0fr 1.0fr;
